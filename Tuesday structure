@@ -1,0 +1,23 @@
+if __name__=='__main__':
+    speech.speak("hello my name is tuesday")
+    speech.intro()
+
+    while True:
+
+        comm=speech.takecommand().lower()
+        if "open a website" in comm:
+            websites.open(".com")
+        elif "google" in comm:
+            search.google()
+        elif "play youtube" in comm:
+            search.youtubeplay()
+        elif "search youtube" in comm:
+            search.youtubesearch()
+        elif "open facebook by mail" in comm:
+            social.facebookemail()
+        elif "open gmail" in comm:
+            social.gmail()
+        elif "send a mail" in comm:
+            sendmail.send()     
+        elif "Tuesday stop" in comm:
+            sys.exit() 
