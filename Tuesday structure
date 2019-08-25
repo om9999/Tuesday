@@ -1,6 +1,13 @@
+import sys 
+from tuesday import speech
+from tuesday import search
+from tuesday import sendmail
+from tuesday import websites
+
+#you can remove intro() if you want
 if __name__=='__main__':
     speech.speak("hello my name is tuesday")
-    speech.intro()
+    speech.intro()# you have to say "my name is 'yourname' "
 
     while True:
 
